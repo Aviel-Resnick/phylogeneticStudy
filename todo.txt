@@ -1,0 +1,3 @@
+Areas to Research:
+- Maximum Likelihood Estimation / Method
+- Stochastic and Batch Gradient Descent
