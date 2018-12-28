@@ -1,0 +1,26 @@
+# Assembly name:  ViralMultiSegProj14961
+# Organism name:  Black beetle virus (viruses)
+# Taxid:          12285
+# BioProject:     PRJNA14961
+# Submitter:      NCBI Genome Project
+# Date:           1993-4-21
+# Assembly type:  n/a
+# Release type:   major
+# Assembly level: Complete Genome
+# Genome representation: full
+# GenBank assembly accession: GCA_000855345.1
+# RefSeq assembly accession: GCF_000855345.1
+# RefSeq assembly and GenBank assemblies identical: yes
+#
+## Assembly-Units:
+## GenBank Unit Accession	RefSeq Unit Accession	Assembly-Unit name
+## GCA_000855335.1	GCF_000855335.1	Primary assembly
+#
+# Ordered by chromosome/plasmid; the chromosomes/plasmids are followed by
+# unlocalized scaffolds.
+# Unplaced scaffolds are listed at the end.
+# RefSeq is equal or derived from GenBank object.
+#
+# Sequence-Name	Sequence-Role	Assigned-Molecule	Assigned-Molecule-Location/Type	GenBank-Accn	Relationship	RefSeq-Accn	Assembly-Unit	Sequence-Length	UCSC-style-name
+RNA 1	assembled-molecule	RNA 1	Segment	X02396.1	=	NC_001411.2	Primary assembly	3106	na
+RNA 2	assembled-molecule	RNA 2	Segment	X00956.1	=	NC_002037.1	Primary assembly	1399	na
