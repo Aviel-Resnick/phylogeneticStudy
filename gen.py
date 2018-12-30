@@ -1,5 +1,6 @@
 import random
 from constants import *
+from dispTree import *
 
 def genSeq(len):
     seq = ""
@@ -8,9 +9,9 @@ def genSeq(len):
         seq = seq + str(random.choice(bases))
     return seq
 
-def evolve(sequence, mutations, mutationCode):
+def evolve(sequence, mutations):
     for x in range(0, mutations):
-        #mutationCode = random.randint(0, 2)
+        mutationCode = random.randint(0, 2)
         # frameshift addition
         if (mutationCode == 0):
             spot = random.randint(0, len(sequence))
@@ -29,12 +30,21 @@ def evolve(sequence, mutations, mutationCode):
             sequence = sequence[:spot] + new + sequence[spot+1:]
     return sequence
 
+def genTree(root):
+    tree = []
+    tree.append(root)
+    children = random.randint(0,3)
+    for i in range(0, children):
+        tree.append(evolve(root, random.randint(1,3)))
+    return tree
+
 def main():
     # generate root seq of given length
     root = genSeq(rootLength)
     print("Root:         " + root)
-    print("Addition:     " + evolve(root, 1, 0))
-    print("Deletion:     " + evolve(root, 1, 1))
-    print("substitution: " + evolve(root, 1, 2))
+    #tree = genTree(root)
+    tree = ["Root",["G", "H"]]
+    print("Tree:       " + str(tree))
+    drawtree(tree, (0,120), 1)
 
 main()
