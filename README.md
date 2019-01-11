@@ -1,2 +1,2 @@
 # phylogenetic_study
-Reconstruction of Phylogenetic Trees from Genomic Data
+Reconstruction of Phylogenetic Trees via Levenshtein Distances of rRNA
