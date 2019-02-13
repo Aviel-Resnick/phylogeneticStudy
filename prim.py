@@ -7,7 +7,7 @@
 6. Repeat steps 2, 3, 4 and 5 until all rows are deleted.
 '''
 
-sampleMatrix = [[0,1,1], [1,0,1], [1,1,0]]
+sampleMatrix = [[ 0.,4.,1., 1.], [4.,0.,4.,4.], [1.,4.,0.,1.], [1.,4.,1.,0.]]
 
 import sys
 
@@ -76,7 +76,7 @@ class Graph():
 
         self.printMST(parent)
 
-g = Graph(3)
+g = Graph(4)
 g.graph = sampleMatrix
 
 g.primMST();
