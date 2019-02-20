@@ -1,5 +1,5 @@
 ''' Prim’s algorithm on a distance matrix:
-1. Choose any vertex to start (usually speciﬁed in question).
+1. Choose any vertex to start.
 2. Delete the row in the matrix for the chosen vertex.
 3. Number the column in the matrix for the chosen vertex.
 4. Put a ring round the lowest undeleted entry in any of the numbered columns (if there is more than one lowest entry, choose any).
@@ -7,7 +7,7 @@
 6. Repeat steps 2, 3, 4 and 5 until all rows are deleted.
 '''
 
-sampleMatrix = [[ 0.,4.,1., 1.], [4.,0.,4.,4.], [1.,4.,0.,1.], [1.,4.,1.,0.]]
+sampleMatrix = [[0.0, 761, 731, 756, 747, 750, 245, 318, 314], [761, 0.0, 628, 365, 616, 678, 765, 765, 772], [731, 628, 0.0, 630, 625, 667, 742, 736, 743], [756, 365, 630, 0.0, 615, 667, 755, 745, 748], [747, 616, 625, 615, 0.0, 647, 750, 739, 751], [750, 678, 667, 667, 647, 0.0, 751, 733, 740], [245, 765, 742, 755, 750, 751, 0.0, 325, 321], [318, 765, 736, 745, 739, 733, 325, 0.0, 253], [314, 772, 743, 748, 751, 740, 321, 253, 0.0]]
 
 import sys
 
@@ -49,7 +49,7 @@ class Graph():
         key[0] = 0
         mstSet = [False] * self.V
 
-        parent[0] = -1 # First node is always the root of
+        parent[0] = -1 # First node is always the root
 
         for cout in range(self.V):
 
@@ -76,7 +76,7 @@ class Graph():
 
         self.printMST(parent)
 
-g = Graph(4)
+g = Graph(9)
 g.graph = sampleMatrix
 
 g.primMST();
