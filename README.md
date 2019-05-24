@@ -1,6 +1,6 @@
 # Reconstruction of Phylogenetic Trees via Levenshtein Distances of RNA
 
-*Awarded the PJAS Director's award for "Most Outstanding Senior High Project in the area of Computer Science"
+*Awarded the PJAS Director's award for "Most Outstanding Senior High Project in the area of Computer Science"*
 
 *Received a First Place from the Pennsylvania Junior Academy of Science at a regional level - 2019*
 
